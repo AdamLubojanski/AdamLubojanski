@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body
+        {
+        
+            background-image: linear-gradient(90deg,red,orange,yellow,green,blue, purple);
+        }
+    </style>
+</head>
+<body>
+
+
+<table id="Tabelka" style="align: center;">
+
+
+  <tr>
+    <td>Tabliczka</td>
+    <td>Adam</td>
+  </tr>
+
+
+</table>
+<br>
+<button type="button" onclick="klik()">Dodaj </button>
+
+<script>
+function klik() {
+ 
+  var tabela = document.getElementById("Tabelka");
+  for (i=0; i<=10; i++)
+  {
+  var row = tabela.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1); 
+ 
+
+  var numer = (0,i);
+
+ 
+  cell1.innerHTML = i+"*"+17+"="+( numer*17);
+  cell2.innerHTML = "Adam";
+  }
+
+}
+</script>
+
+</body>
+</html>
